@@ -1220,9 +1220,19 @@ nav .shape {
   overflow: hidden;
 }
 
+html[lang=en-US] nav .shape {
+  -webkit-transform: translateX(-50%) rotate(-39deg);
+          transform: translateX(-50%) rotate(-39deg);
+}
+
 nav .shape img {
   -webkit-transform: rotate(-39deg);
           transform: rotate(-39deg);
+}
+
+html[lang=en-US] nav .shape img {
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
 }
 
 @media (max-width: 1199px) {
@@ -1351,6 +1361,7 @@ main {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -1361,6 +1372,7 @@ main {
 
 .reg-head {
   font-size: 23px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767px) {
@@ -1661,6 +1673,12 @@ html[lang=ar] .sec-head .more-btn span {
   margin-right: 8px;
 }
 
+@media (max-width: 1199px) {
+  .sec-head .more-btn span {
+    display: none;
+  }
+}
+
 .sec-head .more-btn:hover, .sec-head .more-btn:focus {
   color: #E4AE23;
 }
@@ -1674,6 +1692,7 @@ html[lang=ar] .sec-head .more-btn span {
   font-size: 24px;
   color: #846943;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -1764,6 +1783,7 @@ footer .social .social-link:hover, footer .social .social-link:focus {
 
 footer .footer-img {
   position: relative;
+  height: 100%;
 }
 
 @media (max-width: 1199px) {
